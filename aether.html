@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="test">
+
+		<link rel="shortcut icon" href="/static/images/favicon.ico">
+	  	<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styletest.css">
+		<title>Aether</title>
+
+
+	</head>
+	<body class="project-page">
+
+
+		<div class="maindiv" id="main">
+
+			<section class="words cf fadeUp">
+				
+				<h1 class="project-header grid five">
+					<a href="index.html">IoT + AR</a> <br>
+					<span class="project-title">
+						Project Aether
+					</span>
+					<br>
+					<a href="#output"><img class= "project-thumbnail" src="Image/aether/sneak.png" alt=""></a>
+
+				</h1>
+
+				<p>Project Aether is a side project I did at CMU with my classmate Hardik Patel. We are very interested in designing for AR but neither of us are familiar with developing for it and this motivated us to learn by doing a side project.<p>
+
+				<p>Learning Unity, C# scripting, while designing, prototyping and fabricating, we were able to create <b>an enhanced car buying experience using HoloLens and Aether Pad</b> to help customers better visualize the available options and features in the car in 5 weeks' time.</p>
+	
+				<h4>My Role</h4>
+				<h5>Designer + Prototyper + Programmer</h5>
+				<h4>Team</h4>
+				<h5>Project done with Hardik Patel</h5>
+<!-- 				<h4>Fun Fact</h4>
+				<p>We picked <b>TESLA showrooms</b> as a starting point and this project received recognition from <b>former TESLA CIO</b> Jay Vijayan and he offered us full time positions</p> -->
+
+				
+			</section>
+
+<!-- 			<section id="tailor" class="words cf fadeUp wordsshort">
+
+				<h2 class="project-header grid five">
+					<a href="#process">Why are we doing this</a> <br>
+					<span class="project-title">
+						Intention
+					</span>
+				</h2>
+
+				<p>This is a proof of concept of combining Augmented Reality with Internet of Things to enhance the experience for people's everyday life. The goal is to create an experience which is otherwise impossible to deliver. We identified car showroom as a scenario that would need these kinds of technology and started our design and development sprints.</p>
+
+				</br>
+			</section> -->
+
+
+			<section class="words cf fadeUp wordsshort" id="search">
+				<h2 class="project-header grid five">
+					<a href="#process">Sprint 1</a> <br>
+					<span class="project-title">
+						Sketching and Ideation
+					</span>
+				</h2>
+		        
+		        <p>We started from sketching out the experience in a storyboard and went on building a minimal scene in Unity. At first we did not have a HoloLens device so we <b>pivoted to design in Virtual Reality to simulate</b>  the experience. </p>
+
+		        <p>Below is our original sketch of the main flow of the VR experience. The detailed product specifications document can be found <a href="https://docs.google.com/document/d/1d7f4rW0DjNae4MGqLOWjugeeH9DDaIwtibFOeLiL8ts/edit?usp=sharing">here</a>.</p>
+
+		        <img class= "project-img grid eleven push one" src="Image/aether/sketch.png" style="padding-bottom:4em;" alt=""></a>	
+
+
+		        <p>In a VR setting, we want the scene to be more dynamic and be completely different from what you have in a showrroom. So we added dynamics like animation for the car entering the stage. Below is a recording of the VR scene from Unity. </p>
+
+                <video controls="controls" class="grid project-img-sm" name="Video Name" src="Image/aether/vrscene1.mp4" type="video/mp4" autoplay loop style="float:right; padding-bottom:4em;display:block"></video>
+
+<!-- 		        <img class= "project-img grid eleven push one" src="Image/aether/model.png" style="padding-bottom:4em;" alt=""></a>	 -->
+
+				</section>
+
+			<section id="info" class="words cf fadeUp wordsshort">
+				<h2 class="project-header grid five">
+					<a href="#process">Sprint 2</a><br>
+					<span class="project-title">
+						Moving to AR
+					</span>
+				</h2>
+
+				<p>In order to convey our concept better, I believed in the importance to develop this in AR and we were lucky enough to be able to borrow a HoloLens from the Emirates Lab in Silicon Valley campus. So we finally shifted the experience to the right platform.</p>
+
+				<p>To achieve our objective to help customers better visualize the options they have, we decided to <b>map an Augmented Reality mesh</b> on the static car in the showroom as an overlay. The mesh should act accordingly to the dynamics of the car (e.g. door open, door close, movement). There are two ways to do it:</p>
+
+				<p> 1. Use the spatial mapping technic of HoloLens to build a mesh of the car and add texture to it.</p>
+
+				<p> 2. Build a mesh and tries to map it onto the position of the car. By using different kinds of sensor on the car, we will be able to know the status of the car e.g. if the door is being open, if the car is moving (which is very not likely), and move the car mesh accordingly.</p>
+
+				<p>The spacial mapping technology is not stable enough and the mesh detected is far from acceptable so we crossed out option 1 and decided to use option 2. </p>
+
+
+			</section>
+
+
+			<section class="words cf fadeUp wordsshort" id="feedback">
+				<h2 class="project-header grid five">
+					<a href="#process">Sprint 3</a> <br>
+					<span class="project-title">
+						Prototyping and Testing
+					</span>
+				</h2>	
+
+
+                <p>We tested several rounds while gradually prototyping, and the design evolves along the way.</p>
+
+                <p><b>Phase 1: On screen testing</b></p>
+                <p>In this phase, we prototyped and tested the door open/close and color changing feature on screen. </p>
+                <p>The challenge we have here is communicating between HoloLens and the physical car(sensors). Here are two tutorials I wrote on the communication part.</p>
+
+                <p><a href="https://medium.com/@yifeiyin/communication-between-arduino-and-unity-9fdcccc2be3f">1. Using Serial Monitor to stream data</a></p>
+                <p><a href="https://medium.com/@yifeiyin/connecting-hololens-with-iot-4d8fe0ea1473">2. Using HoloLens as an Internet Server Client</a></p> 
+
+
+                <p>We use conductive ink paint on the door handle to sense if the door was being opened/closed and this movement will be communicated to the digital world, causing the door in the hologram to open/close accrodingly.</p>
+
+                <video controls="controls" class="grid project-img-sm" name="Video Name" src="Image/aether/letmeinCut.mp4" type="video/mp4" autoplay loop style="float:right; padding-bottom:4em;display:block"></video>
+
+
+                <p><b>Phase 2: HoloLens with gesture input</b></p>
+
+                <p>In this phase, we implemented gesture input (airtap). By tapping on the design studio wall, you can choose the options and see the choice being reflected on the car. </p>
+
+                <video controls="controls"  class="grid project-img-sm" name="Video Name" src="Image/aether/colorChangeAir.mp4" type="video/mp4" autoplay loop style="float:right; padding-bottom:4em;display:block"></video>
+
+                <video controls="controls"  class="grid project-img-sm" name="Video Name" src="Image/aether/gesturetest.mp4" type="video/mp4" autoplay loop style="float:right; padding-bottom:4em;display:block"></video>
+
+                <p> During testing, we found it can be very hard to map the mesh to the exact size and position it accordingly in the room. To solve this problem we designed a drag and resize feature for the showroom people to quickly set it up according to the car position in the room. We have a physical lock on the aether pad that locks this feature so the showroom specialist can lock it after finished setting up.</p>
+
+
+
+
+                <p><b>Phase 3: HoloLens with gesture and tangible input</b></p>
+                <p>During this phase, we fabricated the aether pad using laser cutting, 3D printing and physical computing. Here are some sucess and failures during prototyping.</p>
+
+
+                <img class= "project-img-sm grid" src="Image/aether/phabrication.png" style="" alt=""></a> 
+
+
+
+                
+                <p>This phase is when we did the majority of the testing. The problem we found here is that <b>it is great to have the pad in hand when people are outside the car</b>, since it gives them a selection of physical choices lining up in their hand. But when they get inside the car, the physical input might not be the best way.</p>
+
+
+                <img class= "project-img-sm grid" src="Image/aether/testing.png" style="padding-bottom:4em" alt=""></a> 
+
+                <p><b>Phase 4: Hololens with gesture, tangible and voice input</b></p>
+
+                <p>Thus, we did not stop here. We went on designing for the tesla screen inside the car. Taking advantage of the existing screen, the user can be freed from the aether pad and will be able to feel the texture of the inside of the car, and also get to tryout the digital screen.</p>
+
+                <video controls="controls" width="60%" class="grid project-img-sm" name="Video Name" src="Image/aether/incarRender.mp4" type="video/mp4" autoplay loop style="float:right; padding-bottom:4em;display:block"></video>
+
+                <p><b>Voice input</b> is also implemented, providing a completely hands free experience. Voice input is being handled by speech Recognition API from windows 10.</p>
+
+
+
+                <p>Watch AETHER in action:</p>
+
+
+
+                <iframe width="535" height="630" class= "project-img grid twelve" src="https://www.youtube.com/embed/Qco-0QEzkL8" frameborder="0" allowfullscreen></iframe>
+
+
+
+				
+
+				
+
+
+
+				
+
+			</section>
+
+			<section class="words cf fadeUp wordsshort" id="feedback">
+				<h2 class="project-header grid five">
+					<a href="#process">Feedbacks</a> <br>
+					<span class="project-title">
+						Takeaways
+					</span>
+				</h2>	
+
+				<p>We got a lot compliments for this project from professors. One of our professors in Silicon Valley showed our demo to former Tesla CIO Jay Vijayan and he liked it enough to offer us full time positions.</p>
+				<p>However, it is still a very rough work and we did not have time to work on the craft. If I have more time, I would work on the transition of options changing to make it a more playful experience.</p>
+                <p>Furthermore, the view point of HoloLens is not as big as we imagined, so if similar implementations works better on smaller objects, like changing colors for a notebook, but does not work as good for large scale objects.</p>
+
+				
+
+			</section>
+
+
+
+		<section class="project-footer cf">
+			<div class="back grid six">
+				<a href="index.html">Go back</a>
+			</div>
+			<div class="links grid six">
+				<section class="cf">
+					<div class="grid six footer-cat">Work</div>
+					<ul class="grid six">
+                        <li><a href="huntington.html">Huntington Bank</a></li>
+						<li><a href="efarm.html">IBM </a></li>
+						<li><a href="as.html">ApplySquare</a></li>						
+					</ul>
+				</section>
+				<section class="cf">
+					<div class="grid six footer-cat">Projects</div>
+					<ul class="grid six">
+                        <li><a href="nomnom.html">NomNom Box</a></li>
+					</ul>
+				</section>
+
+				<section class="cf">
+					<div class="grid six footer-cat">Contact</div>
+					<ul class="grid six">
+						<li><a href="mailto: yifeiyin@cmu.edu">email</a></li>
+						<li><a href="YifeiYIN_Resume_Carnegie_Mellon_University.pdf" target="_blank">r&eacute;sum&eacute;</a></li>
+					</ul>
+				</section>
+			</div>
+		</section>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/maintest.js"></script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-87677310-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+
+
+	</body>
+</html>
+

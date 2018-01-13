@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="test">
+
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link rel="stylesheet" href="css/styletest.css">
+
+	<title>Efarm</title>
+
+	
+	<script src="https://use.typekit.net/tlf3plo.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,600,400' rel='stylesheet' type='text/css'>
+	<script>try{Typekit.load({ async: false });}catch(e){}</script>
+
+</head>
+<body class="project-page">
+<div id="main">
+	<section class="words cf fadeUp">
+		
+		<h1 class="project-header grid five">
+			<a href="index.html">Drones for Agriculture</a> <br>
+			<span class="project-title">
+				Efarm
+			</span>
+		</h1>
+
+        <p>How do we use drones to monitor farming?</p>
+
+		<p>As a summer intern at IBM Shanghai, I designed and prototyped the operating tablet application for managing drones on e-farming systems. To maintain confidentiality, I am unable to publish full details of my work but here is an overview of my accomplishments.</p>
+
+		<h4>Scope</h4>
+		<h5>IBM Global Business Solutions</h5>
+		<h4>My Role</h4>
+		<h5>UI Designer</h5>
+	</section>
+		
+
+
+
+    <div id ="hidden">
+	<section id ="problem" class="words cf fadeUp wordsshort"  >
+
+		<h2 class="project-header grid five">
+			<a href="#process">Problem Space</a> <br>
+			<span class="project-title">
+				Drones for Agriculture
+			</span>
+		</h2>
+
+		<p>A drone can capture highly accurate images of farm fields very efficiently, covering up to hundreds of acres in a single flight. By using image processing software, these shots can be transformed into one big orthomosaic image. Applying algorithms to this image reduces the manual labor to manage these crop area.</p>
+
+        <p>However, there was not a dedicated software platform designed specifically for farmers and surveyors to seemlessly perform these tasks.</p>
+
+		<img class= "grid project-img-sm" src="Image/efarm/cropcoutingworkflow.png" alt="HI-FI Proto" style="margin-bottom:4em;">
+
+	</section>
+
+     <section id ="problem" class="words cf fadeUp wordsshort">
+
+        <h2 class="project-header grid five">
+            <a href="#process">Rule of Thumb</a> <br>
+            <span class="project-title">
+                Design Heuristics
+            </span>
+        </h2>
+
+        <p>The software should present a minimal number of decision points for the user and should be on a mobile platform.</p>
+        
+        <img class= "grid project-img" src="Image/efarm/competitors.png" alt="HI-FI Proto" style="margin-bottom:4em;">
+
+        <p>Competitors in the marketplace provide robust flight planning and control systems that are cumbersome for beginners to operate.</p>
+        <p>We focused on integrating the core features into a better overall experience. The functions should only be focused on their use cases and the visual should be clear and emphasize the actions.</p>
+
+
+    </section>
+   
+    <section id ="problem" class="words cf fadeUp wordsshort">
+
+        <h2 class="project-header grid five">
+            <a href="#process">Working out a workflow</a> <br>
+            <span class="project-title">
+                Operate drones to survey fields using tablet
+            </span>
+        </h2>
+
+        <p>I designed the operational workflow for the drone, evaluating the nature of the workflow, such as the drone's function after a successful route or the pivotal role of the drone's battery. This question in particular led to the addition of a troubleshooting branch, reducing the risk of a powerless projectile.</p>
+
+        <img class= "grid project-img" src="Image/efarm/operatingprocessmap.png" alt="HI-FI Proto" style="margin-bottom:4em;">
+
+    </section>	
+
+    <section id ="problem" class="words cf fadeUp wordsshort">
+
+        <h2 class="project-header grid five">
+            <a href="#process">The Design</a> <br>
+            <span class="project-title">
+                Snippet of the MVP
+            </span>
+        </h2>
+        <img class= "grid project-img-sm" src="Image/efarm/sketch.png" style="margin-bottom:4em;">
+        <img class= "grid project-img-sm" src="Image/efarm/mini.png">
+
+    </section>  
+
+
+
+	<section class="project-footer-images">
+	
+</section>
+
+<section class="project-footer cf">
+	<div class="back grid six">
+		<a href="index.html">Go back</a>
+	</div>
+	<div class="links grid six">
+		<section class="cf">
+			<div class="grid six footer-cat">Work</div>
+			<ul class="grid six">
+        <li><a href="huntington.html">Huntington Bank</a></li>
+				<li><a href="as.html">ApplySquare</a></li>
+			</ul>
+		</section>
+		<section class="cf">
+			<div class="grid six footer-cat">Projects</div>
+			<ul class="grid six">
+        <li><a href="aether.html">Aether</a></li>
+				<li><a href="nomnom.html">Nomnom Box</a></li>
+				
+			</ul>
+<!-- 		</section>
+        <section class="cf">
+            <div class="grid six footer-cat">Fun</div>
+            <ul class="grid six">
+                <li><a href="sketch.html">Sketches</a></li>  
+            </ul>
+        </section> -->
+		<section class="cf">
+			<div class="grid six footer-cat">Contact</div>
+			<ul class="grid six">
+				<li><a href="mailto: yifeiyin@cmu.edu">email</a></li>
+				<li><a href="YifeiYIN_Resume_Carnegie_Mellon_University.pdf" target="_blank">r&eacute;sum&eacute;</a></li>
+			</ul>
+		</section>
+	</div>
+</section>
+</div>
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.unveil.js"></script>
+<script src="js/jquery.parallax.edited.js"></script>
+<script src="js/maintest.js"></script>
+<script src="/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#hide").click(function(){
+  $("#problem").hide();
+  });
+  $("#show1").click(function(){
+  $("#hidden").show();
+  });
+});
+$(document).ready(function(){
+  $("#hidetest").click(function(){
+  $("#test").hide();
+  });
+  $("#show2").click(function(){
+  $("#hidden").show();
+  });
+});
+$(document).ready(function(){
+  $("#hidetest").click(function(){
+  $("#test").hide();
+  });
+  $("#show3").click(function(){
+  $("#hidden").show();
+  });
+});
+$(document).ready(function(){
+  $("#hidetest").click(function(){
+  $("#test").hide();
+  });
+  $("#show4").click(function(){
+  $("#hidden").show();
+  });
+});
+$(document).ready(function(){
+  $("#hidetest").click(function(){
+  $("#test").hide();
+  });
+  $("#show5").click(function(){
+  $("#hidden").show();
+  });
+});
+</script>
+</body>
+</html>

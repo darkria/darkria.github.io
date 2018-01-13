@@ -1,0 +1,70 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: "Open Sans";
+	vertical-align: baseline;
+}
+
+
+.grid { 
+	box-sizing: border-box; 
+	float: left;
+}
+.padded { padding: 0 10px; }
+
+.one { width: calc(100% / 12); }
+.two { width: calc(100% / 6); }
+.three { width: 25%; }
+.four { width: calc(100% / 3)}
+.five { width: calc(100% / 12 * 5); }
+.six { width: 50%; }
+.seven { width: calc(100% / 12 * 7); }
+.eight { width: calc(100% / 2 * 3); }
+.nine { width: 75%; }
+.ten { width: calc(100% / 5 * 4); }
+.eleven { width: calc(100% / 12 * 11); }
+.twelve { width: 100%; }
+
+.push-one { margin-left: calc(100% / 12); }
+.push-two { margin-left: calc(100% / 6); }
+.push-three { margin-left: 25%; }
+.push-four { margin-left: calc(100% / 3)}
+.push-five { margin-left: calc(100% / 12 * 5); }
+.push-six { margin-left: 50%; }
+.push-seven { margin-left: calc(100% / 12 * 7); }
+.push-eight { margin-left: calc(100% / 2 * 3); }
+.push-nine { margin-left: 75%; }
+.push-ten { margin-left: calc(100% / 5 * 4); }
+.push-eleven { margin-left: calc(100% / 12 * 11); }
+
+
+
+.grid { 
+	box-sizing: border-box; 
+	float: left;
+}
+.padded { padding: 0 10px; }
+
+.one { width: calc(100% / 4); }
+.two { width: calc(100% / 2); }
+.three { width: 75%; }
+.four { width: 100%}
+
+.push-one { margin-left: calc(100% /4); }
+.push-two { margin-left: calc(100%/2); }
+.push-three { margin-left: 75%; }
+.push-four { margin-left: calc(100%)}
